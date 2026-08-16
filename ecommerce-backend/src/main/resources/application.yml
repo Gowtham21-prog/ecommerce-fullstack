@@ -23,7 +23,7 @@ spring:
 
 app:
   cors:
-    allowed-origins: http://localhost:5173,http://localhost:3000
+     allowed-origins: http://localhost:5173,http://localhost:3000,https://ecommerce-fullstack-2k1bs454y-gowtham-m.vercel.app
   jwt:
     secret: ${JWT_SECRET:replace-this-with-a-long-random-secret-at-least-32-chars-for-hs256}
     expiration-ms: ${JWT_EXPIRATION_MS:86400000}   # 24 hours
