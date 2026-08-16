@@ -1,0 +1,154 @@
+:root {
+  /* ---------- Color: ink / bone / moss / clay ---------- */
+  --color-ink: #14140f;
+  --color-ink-soft: #23231b;
+  --color-bone: #dfcfdf;
+  --color-bone-dim: #efeadd;
+  --color-paper: #fffdf8;
+
+  --color-moss: #4a5d45;
+  --color-moss-deep: #3a4a37;
+  --color-moss-tint: #e6ebe2;
+
+  --color-clay: #b4552e;
+  --color-clay-deep: #954726;
+  --color-clay-tint: #f5e2d6;
+
+  --color-grey-700: #4d4a42;
+  --color-grey-500: #8a857a;
+  --color-grey-300: #c9c4b6;
+  --color-grey-150: #e4dfd1;
+  --color-grey-100: #eeeade;
+
+  --color-success: #4a5d45;
+  --color-error: #a3402a;
+  --color-star: #b4552e;
+
+  /* semantic */
+  --bg-page: var(--color-bone);
+  --bg-surface: var(--color-paper);
+  --bg-inverse: var(--color-ink);
+  --text-primary: var(--color-ink);
+  --text-muted: var(--color-grey-500);
+  --text-inverse: var(--color-bone);
+  --border-subtle: var(--color-grey-150);
+  --border-strong: var(--color-ink);
+  --accent-primary: var(--color-clay);
+  --accent-secondary: var(--color-moss);
+
+  /* ---------- Type ---------- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --fs-2xs: 0.6875rem;   /* 11px */
+  --fs-xs: 0.75rem;      /* 12px */
+  --fs-sm: 0.875rem;     /* 14px */
+  --fs-base: 1rem;       /* 16px */
+  --fs-md: 1.125rem;     /* 18px */
+  --fs-lg: 1.375rem;     /* 22px */
+  --fs-xl: 1.75rem;      /* 28px */
+  --fs-2xl: 2.25rem;     /* 36px */
+  --fs-3xl: 3rem;        /* 48px */
+  --fs-4xl: 4rem;        /* 64px */
+  --fs-5xl: 5.25rem;     /* 84px */
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.06em;
+  --ls-wider: 0.14em;
+
+  /* ---------- Spacing (8px base) ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-11: 6.5rem;
+  --space-12: 8rem;
+
+  /* ---------- Layout ---------- */
+  --container-max: 1360px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-pill: 999px;
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 480ms;
+
+  /* ---------- Elevation ---------- */
+  --shadow-sm: 0 1px 2px rgba(20, 20, 15, 0.06);
+  --shadow-md: 0 6px 20px -4px rgba(20, 20, 15, 0.12);
+  --shadow-lg: 0 20px 50px -12px rgba(20, 20, 15, 0.22);
+  --shadow-card-hover: 0 24px 48px -16px rgba(20, 20, 15, 0.25);
+
+  --header-height: 76px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-height: 64px;
+  }
+}
+
+/* ---------- Dark theme ----------
+   Same semantic token names, re-pointed to a dark-friendly palette.
+   Every component already consumes the semantic tokens below, so no
+   component file needs to change for dark mode to apply. */
+[data-theme='dark'] {
+  --color-ink: #000000;
+  --color-ink-soft: #dedac9;
+  --color-bone: #33566d;
+  --color-bone-dim: #473e47;
+  --color-paper: #1c1c16;
+
+  --color-moss: #7f9877;
+  --color-moss-deep: #a3bd9a;
+  --color-moss-tint: #26301f;
+
+  --color-clay: #e08252;
+  --color-clay-deep: #f0a074;
+  --color-clay-tint: #3a2419;
+
+  --color-grey-700: #cfcabb;
+  --color-grey-500: #a19c8d;
+  --color-grey-300: #9e8599;
+  --color-grey-150: #322f27;
+  --color-grey-100: #26241d;
+
+  --color-success: #7f9877;
+  --color-error: #e2745a;
+  --color-star: #e08252;
+
+  --bg-page: #121210;
+  --bg-surface: #1c1c16;
+  --bg-inverse: #f3f1e9;
+  --text-primary: #f3f1e9;
+  --text-muted: #a19c8d;
+  --text-inverse: #17170f;
+  --border-subtle: #322f27;
+  --border-strong: #f3f1e9;
+  --accent-primary: #e08252;
+  --accent-secondary: #7f9877;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 50px -12px rgba(0, 0, 0, 0.6);
+  --shadow-card-hover: 0 24px 48px -16px rgba(0, 0, 0, 0.65);
+}

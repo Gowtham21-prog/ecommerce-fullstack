@@ -1,0 +1,111 @@
+.seller-products__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-8);
+}
+
+.seller-products__title {
+  font-size: var(--fs-2xl);
+  font-weight: 400;
+}
+
+.seller-products__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.seller-products__table th {
+  text-align: left;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+  color: var(--text-muted);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.seller-products__table td {
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: middle;
+}
+
+.seller-products__cell-product {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.seller-products__cell-product img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.seller-products__stock-editor {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.seller-products__stock-editor input {
+  width: 70px;
+  padding: var(--space-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+}
+
+.seller-products__stock-save {
+  background: var(--color-moss);
+  color: var(--color-bone);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.seller-products__row-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--fs-sm);
+}
+
+.seller-products__row-actions a {
+  color: var(--text-primary);
+}
+
+.seller-products__row-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: inline-flex;
+}
+
+.seller-products__row-actions button:hover {
+  color: var(--color-clay);
+}
+
+@media (max-width: 640px) {
+  .seller-products__table thead {
+    display: none;
+  }
+  .seller-products__table,
+  .seller-products__table tbody,
+  .seller-products__table tr,
+  .seller-products__table td {
+    display: block;
+    width: 100%;
+  }
+  .seller-products__table tr {
+    padding-block: var(--space-3);
+  }
+}

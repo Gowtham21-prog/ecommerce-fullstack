@@ -1,0 +1,19 @@
+.featured-products {
+  padding-block: var(--space-10);
+}
+
+.featured-products__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-7);
+}
+
+@media (max-width: 640px) {
+  .featured-products__header {
+    align-items: center;
+  }
+  .featured-products__header .btn__label {
+    display: none;
+  }
+}

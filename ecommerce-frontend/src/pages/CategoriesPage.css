@@ -1,0 +1,16 @@
+.categories-page__header {
+  padding-block: var(--space-9) var(--space-4);
+  max-width: 60ch;
+}
+
+.categories-page__title {
+  font-size: var(--fs-2xl);
+  font-weight: 400;
+  margin-block: var(--space-2) var(--space-4);
+}
+
+.categories-page__description {
+  font-size: var(--fs-md);
+  color: var(--text-muted);
+  line-height: var(--lh-relaxed);
+}

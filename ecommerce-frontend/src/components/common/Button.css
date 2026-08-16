@@ -1,0 +1,111 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: transform var(--dur-fast) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out),
+    color var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+  position: relative;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.6875rem;
+}
+.btn--md {
+  padding: var(--space-3) var(--space-6);
+}
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--fs-sm);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.btn--primary {
+  background: var(--color-ink);
+  color: var(--color-bone);
+  border-color: var(--color-ink);
+}
+.btn--primary:hover {
+  background: var(--color-clay);
+  border-color: var(--color-clay);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+.btn--secondary:hover {
+  background: var(--color-ink);
+  color: var(--color-bone);
+}
+
+.btn--accent {
+  background: var(--color-clay);
+  color: var(--color-bone);
+  border-color: var(--color-clay);
+}
+.btn--accent:hover {
+  background: var(--color-clay-deep);
+  border-color: var(--color-clay-deep);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: transparent;
+}
+.btn--ghost:hover {
+  background: var(--color-grey-100);
+}
+
+.btn--inverse {
+  background: var(--color-bone);
+  color: var(--color-ink);
+  border-color: var(--color-bone);
+}
+.btn--inverse:hover {
+  background: var(--color-clay);
+  color: var(--color-bone);
+  border-color: var(--color-clay);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn--icon-only {
+  padding: var(--space-3);
+  aspect-ratio: 1;
+}
+
+.btn__icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+.btn__icon svg {
+  width: 100%;
+  height: 100%;
+}

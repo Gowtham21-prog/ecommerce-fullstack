@@ -1,0 +1,51 @@
+.seller-orders__title {
+  font-size: var(--fs-2xl);
+  font-weight: 400;
+  margin-bottom: var(--space-6);
+}
+
+.seller-orders__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.seller-orders__table th {
+  text-align: left;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+  color: var(--text-muted);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.seller-orders__table td {
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: middle;
+  font-size: var(--fs-sm);
+}
+
+.seller-orders__cell-product {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.seller-orders__cell-product img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.seller-orders__table select {
+  padding: var(--space-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+}
+
+.seller-orders__no-id {
+  color: var(--text-muted);
+}

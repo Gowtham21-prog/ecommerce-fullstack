@@ -1,0 +1,14 @@
+.wishlist-page {
+  padding-block: var(--space-8) var(--space-11);
+}
+
+.wishlist-page__title {
+  font-size: var(--fs-2xl);
+  font-weight: 400;
+  margin-bottom: var(--space-8);
+}
+
+.wishlist-page__title span {
+  font-size: var(--fs-lg);
+  color: var(--text-muted);
+}

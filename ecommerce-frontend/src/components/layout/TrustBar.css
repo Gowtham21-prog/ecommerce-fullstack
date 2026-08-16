@@ -1,0 +1,36 @@
+.trust-bar {
+  background: var(--color-moss);
+  color: var(--color-bone);
+}
+
+.trust-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-9);
+  padding-block: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.trust-bar__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  letter-spacing: var(--ls-normal);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .trust-bar__inner {
+    gap: var(--space-5);
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-inline: var(--container-pad);
+    -webkit-overflow-scrolling: touch;
+  }
+  .trust-bar__inner::-webkit-scrollbar {
+    display: none;
+  }
+}
