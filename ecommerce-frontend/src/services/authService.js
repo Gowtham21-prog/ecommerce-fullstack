@@ -16,7 +16,7 @@ import { apiPost, apiGet } from './apiClient'
  * @returns {Promise<{token: string, userId: number, name: string, email: string, role: string}>}
  */
 export function register(payload) {
-  return apiPost('/auth/register', payload)
+  return apiPost('/api/auth/register', payload)
 }
 
 /**
@@ -25,7 +25,7 @@ export function register(payload) {
  * @returns {Promise<{token: string, userId: number, name: string, email: string, role: string}>}
  */
 export function login(payload) {
-  return apiPost('/auth/login', payload)
+  return apiPost('/api/auth/login', payload)
 }
 
 /**
@@ -34,5 +34,5 @@ export function login(payload) {
  * @returns {Promise<{id: number, name: string, email: string, role: string}>}
  */
 export function getCurrentUser() {
-  return apiGet('/auth/me')
+  return apiGet('/api/auth/me')
 }
